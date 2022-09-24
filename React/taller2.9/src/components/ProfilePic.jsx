@@ -4,8 +4,15 @@ import "./styles/ProfilePic.css"
 export const ProfilePic = () => {
   return (
     <React.Fragment>
+      <div className='gris'>
+      
+      </div>
     <div className='container-div'>
-        <img className="edit" src={image} height={200} width={200} />
+        <img className="edit" src={image} />
+    </div>
+    
+    <div>
+
     </div>
     
     
