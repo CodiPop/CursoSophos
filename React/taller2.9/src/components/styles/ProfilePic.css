@@ -1,0 +1,11 @@
+.edit{
+    border-radius: 50%;
+    align-self: center;
+}
+.container-div{ 
+    display: flex;
+    height: 300px;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    }
