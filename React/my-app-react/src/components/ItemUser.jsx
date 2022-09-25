@@ -10,7 +10,9 @@ class ItemUser extends React.Component {
   state = {};
 
   render() {
+    //const{name,pais,correo} = user;
     const{name,pais,correo} = this.props.user;
+    console.log(name);
     return (
       <div className="detail">
        <p>

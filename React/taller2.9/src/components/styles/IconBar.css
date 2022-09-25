@@ -10,6 +10,9 @@
     opacity: 1;
     color: #9fc177;
 }
+.btn:focus{
+    color: #9fc177;
+}
 
 .bar{
     display: flex;
