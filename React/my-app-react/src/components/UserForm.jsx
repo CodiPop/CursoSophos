@@ -6,7 +6,7 @@ export class UserForm extends Component {
     super(props)
     this.state = {
         name:"",
-        pais:"sda",
+        pais:"",
         correo:""
     }
 }
