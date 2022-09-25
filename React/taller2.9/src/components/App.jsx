@@ -25,8 +25,8 @@ export default class App extends Component {
 
   handleClick = (e) =>{
     this.setState({
-      info1:e.target.name,
-      info2:e.target.value
+      info1:e.currentTarget.name,
+      info2:e.currentTarget.value
     })
 
   }
