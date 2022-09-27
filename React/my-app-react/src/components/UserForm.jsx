@@ -1,7 +1,10 @@
+import { FormControl, FormHelperText, InputLabel, Input, CircularProgress } from '@mui/material'
 import React, { Component } from 'react'
 import "./Styles/UserForm.css"
 export class UserForm extends Component {
-
+    state ={
+        loading:true
+    }
     constructor(props){
     super(props)
     this.state = {
@@ -27,28 +30,37 @@ export class UserForm extends Component {
         
     }
 
+
+
   render() {
     const {name,pais,correo} = this.props.user;
     return (
       <div>
-        <h2 className='title-form'>Nuevo Usuario</h2>
+        
         <form className='form' onSubmit={this.handleSubmit}>
-            <div className='input-form'>
-                <label>Nombre:</label>
-                <input type="text" name="name" onChange={this.props.onChange} value={name}></input>
+            <FormControl fullWidth>
+                <InputLabel>Nombre:</InputLabel>
+                <Input type="text" name="name" onChange={this.props.onChange} value={name}></Input>
+                <FormHelperText>Soy un mensaje de ayuda</FormHelperText>
+            </FormControl>
+            <br></br>
+            <br></br>
+            
+            <FormControl fullWidth>
+                <InputLabel>Pais:</InputLabel>
+                <Input type="text" name="pais" onChange={this.props.onChange} value={pais}></Input>
 
-            </div>
-            <div className='input-form'>
-                <label>Pais:</label>
-                <input type="text" name="pais" onChange={this.props.onChange} value={pais}></input>
+            </FormControl>
+            <br></br><br></br>
+            <FormControl fullWidth>
+                <InputLabel>Correo:</InputLabel>
+                <Input type="text" name="correo" onChange={this.props.onChange} value={correo}></Input>
 
-            </div>
-            <div className='input-form'>
-                <label>Correo:</label>
-                <input type="text" name="correo" onChange={this.props.onChange} value={correo}></input>
+            </FormControl>
+            <br></br><br></br>
+            
 
-            </div>
-            <button >Agregar</button>
+            {this.state.loading && <CircularProgress/>}
 
         </form>
 

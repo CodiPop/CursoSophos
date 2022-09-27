@@ -5,7 +5,7 @@ import { IoPersonOutline,IoMailOutline,IoNewspaperOutline,IoMapOutline,IoPhonePo
 const data = {
   nombre: "Santiago Alberto Guerrero Martinez",
   correo: "Sguerreroa@uninorte.edu.co",
-  cumpleanos: "Colombia",
+  cumpleanos: "2 de mayo",
   direccion:"Mz T Casa 6, Concepcion 2",
   telefono:"3003776513",
   contrasena:"123456789"

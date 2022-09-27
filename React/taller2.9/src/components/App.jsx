@@ -4,22 +4,13 @@ import ProfilePic from "./ProfilePic"
 import { IconBar } from './IconBar'
 
 
-const data = {
-  nombre: "Santiago",
-  correo: "sguerreroa@uninorte.edu.co",
-  cumpleanos: "Colombia",
-  direccion:"Mz T Casa 6, Concepcion 2",
-  telefono:"3003776513",
-  contrasena:"123456789"
-  
-};
 
 export default class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      info1:"validando",
-      info2:"xd"
+      info1:"Seleccione una opcion",
+      info2:""
     }
   }
 
