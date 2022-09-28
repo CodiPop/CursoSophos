@@ -6,20 +6,9 @@ import Lista from '../pages/Lista';
 import User from "../pages/User";
 import {BrowserRouter as Router, Route,Routes} from "react-router-dom"
 
-export default class App extends React.Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      name: "Santiago",
-      pais: "Colombia",
-      correo: "sguerreroa@uninorte.edu.co"
-    }
-  }
-  handleChange = (e) =>{
-    this.setState({[e.target.name]: e.target.value})
-    
-  }
-  render() {
+const App = () => {
+
+  
     return (
 
       <React.Fragment>
@@ -37,7 +26,10 @@ export default class App extends React.Component {
       
       </React.Fragment>
     )
-  }
+  
 }
+
+
+export default App
 
 

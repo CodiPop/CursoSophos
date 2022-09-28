@@ -29,11 +29,11 @@ const Header = () => {
             Inicio
           </Link>
          
-        <Link component={RLink} to="/Lista" color="inherit">
+        <Link component={RLink} to="/Form" color="inherit">
             Formulario
           </Link> 
        
-          <Link component={RLink} to="/Form" color="inherit">
+          <Link component={RLink} to="/Lista" color="inherit">
             Lista
           </Link>
         </Toolbar>

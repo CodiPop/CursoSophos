@@ -4,6 +4,7 @@ import React from 'react'
 import ItemUser from '../components/ItemUser'
 import Title from '../components/Title'
 import { makeStyles } from '@material-ui/core/styles'
+import Count from '../components/Count'
 const data = {
     name: "Santiago",
     pais: "Colombia",
@@ -26,6 +27,7 @@ const Home = () => {
     const classes = useStyles();
   return (
     <React.Fragment>
+    <Count/>
     <Box className={classes.container}>
 
     <Container maxWidth="md" className={classes.container}>
