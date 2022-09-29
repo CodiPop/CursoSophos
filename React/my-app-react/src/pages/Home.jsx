@@ -27,7 +27,7 @@ const Home = () => {
     const classes = useStyles();
   return (
     <React.Fragment>
-    <Count/>
+    
     <Box className={classes.container}>
 
     <Container maxWidth="md" className={classes.container}>

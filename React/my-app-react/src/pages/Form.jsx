@@ -6,9 +6,9 @@ import React, { useState } from "react";
 
 const Form = () => {
   const intialState = {
-    name: "Santiago",
-    pais: "Colombia",
-    correo: "sguerreroa@uninorte.edu.co",
+    name: "",
+    pais: "",
+    correo: "",
   };
 
   const [user, setUser] = useState(intialState);
