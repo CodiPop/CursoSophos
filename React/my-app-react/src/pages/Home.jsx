@@ -5,6 +5,7 @@ import ItemUser from '../components/ItemUser'
 import Title from '../components/Title'
 import { makeStyles } from '@material-ui/core/styles'
 import Count from '../components/Count'
+import { UserList } from '../components/UserList'
 const data = {
     name: "Santiago",
     pais: "Colombia",
@@ -32,8 +33,9 @@ const Home = () => {
 
     <Container maxWidth="md" className={classes.container}>
     <Title text="Bienvenido User Random"/>
-    <ItemUser user={data}/>
-    <Typography variant='body2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+    {/* <ItemUser user={data}/> */}
+    <UserList/>
+    {/* <Typography variant='body2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography> */}
     
     </Container>
 
